@@ -12,8 +12,7 @@ export class UI {
     this.location.textContent = weather.name + ' / ' + weather.sys.country;
     this.desc.textContent = weather.weather[0]['description'];
     this.string.textContent = weather.main.temp + ' °C';
-    this.humidity.textContent = 'Humedad: ' + weather.humidity + ' %';
+    this.humidity.textContent = 'Humedad: ' + weather.main.humidity + ' %';
     this.wind.textContent = 'Vel. Viento ' + weather.wind.speed + ' m/s';
-
   }
 }
